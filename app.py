@@ -21,6 +21,12 @@ def index():
 def kontaktai():
     return render_template("kontaktai.html")
 
+#marstrutas: kontaktu puslapis (forma)
+#metodai GET ir POST
+@app.route("/apie") #dekoratorius
+def apie():
+    return render_template("apie.html")
+
 #aplikacijos paleidimas
 #paleidimo metu kai debug = True - automatinis aplikacijos perkrovimas pakeitus koda + klaidu rodymas
 if __name__ == "__main__":
